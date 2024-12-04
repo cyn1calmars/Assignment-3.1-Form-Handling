@@ -18,21 +18,25 @@
         </a>
       </div>
 
+    <!--Login Page Form, submission leads to a javascript validation -->
   <form name="appForm" action="LoginForm" onsubmit="return validateForm();" method="post">
 
   <div class="login_form">
     <h1>Employee Login Page</h1>
 
+    <!--Username input-->
     <label for="user_error"><b>Username</b></label>
     <input type="userid" placeholder="Enter Username" name="user">
     <div class="error" id="user_error"></div>
-
+    
+    <!--Password input-->
     <label for="pass_error"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw">
     <div class="error" id="pass_error"></div>
 
     <input type="submit" value="Login">
     <br>
+    <!--Outputs the result if the input are valid-->
     <div id="user_result"></div>
     <div id="pass_result"></div>
   </div>
